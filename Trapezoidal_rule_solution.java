@@ -5,7 +5,7 @@ public class Trapezoidal_rule_solution {
     // Method for the calculation of functional value for different values of x
     public static double functionalValue(double x) {
         double fx = Math.pow(x,2); // Enter fx ********************** in this line (you can take algebraic function also like this fx=1/x;)
-        // For this particular function limit is taken from 0.2 to 1.4 & interval is taken 12
+        
         
         return fx;
     }
