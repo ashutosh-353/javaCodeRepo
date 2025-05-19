@@ -5,16 +5,19 @@ public class Oops_forDifferentOperationsOn_twoComplexNumbers {
         Scanner sc = new Scanner(System.in);
 
         Complex c1 = new Complex();
+        System.out.println("Sum Calculation:");
         System.out.println("Enter value of parameters of the two complex numbers in x+iy format like 1st x then y respectively:");
         c1.sum(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
 
         
         Complex c2 = new Complex();
+        System.out.println("Difference Calculation:");
         System.out.println("Enter value of parameters of the two complex numbers in x+iy format like 1st x then y respectively:");
         c2.difference(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
 
 
         Complex c3 = new Complex();
+        System.out.println("Product Calculation:");
         System.out.println("Enter value of parameters of the two complex numbers in x+iy format like 1st x then y respectively");
         c3.product(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
 
@@ -23,7 +26,7 @@ public class Oops_forDifferentOperationsOn_twoComplexNumbers {
 
 class Complex {
 
-   public void sum(int x, int y, int x2, int y2) {
+    void sum(int x, int y, int x2, int y2) {
         int real_sum = x + x2;
         int img_sum = y + y2;
 
@@ -35,7 +38,7 @@ class Complex {
             }
     }
 
-    public void difference(int x, int y, int x2, int y2) {
+    void difference(int x, int y, int x2, int y2) {
         int real_sum = x - x2;
         int img_sum = y - y2;
 
@@ -47,7 +50,7 @@ class Complex {
         }
     }
 
-    public void product(int x, int y, int x2, int y2) {
+    void product(int x, int y, int x2, int y2) {
         int r_r=x*x2;
         int r_i=x*y2;
         int i_r=y*x2;
